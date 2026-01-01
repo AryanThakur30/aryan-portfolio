@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aryan Thakur | Portfolio</title>
+
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <h1 class="logo">Aryan Thakur</h1>
+    <div class="logo">Aryan Thakur</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -21,20 +24,24 @@
 
   <!-- HERO SECTION -->
   <section class="hero">
-
-    <div class="hero-content">
-      <span class="intro">Hello, I'm</span>
-      <h2>Aryan Thakur</h2>
+    <div class="hero-left">
+      <h1>Hi, I’m <span>Aryan Thakur</span></h1>
       <p>
-        I build data-driven projects and deploy scalable real-world applications.
+        I build data-driven projects and deploy real-world applications.
+        Focused on clean design, practical systems, and continuous improvement.
       </p>
-      <a href="projects.html" class="btn">View Projects</a>
+
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn primary">View Projects</a>
+        <a href="assets/resume.pdf" class="btn secondary" target="_blank">Download Resume</a>
+      </div>
     </div>
 
-    <div class="hero-photo">
-      <img src="./assets/profile.jpg" alt="Aryan Thakur" />
+    <div class="hero-right">
+      <div class="image-card">
+        <img src="assets/profile.jpg" alt="Aryan Thakur">
+      </div>
     </div>
-
   </section>
 
 </body>
