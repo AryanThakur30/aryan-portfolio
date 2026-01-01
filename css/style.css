@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL BACKGROUND - 3D DEPTH */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      900px circle at 10% 20%,
+      rgba(255, 255, 255, 0.06),
+      transparent 40%
+    ),
+    radial-gradient(
+      700px circle at 90% 80%,
+      rgba(255, 255, 255, 0.05),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #0b0b0d 0%,
+      #111114 45%,
+      #0d0d10 100%
+    );
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+/* LEFT CONTENT */
+.hero-content {
+  max-width: 520px;
+}
+
+.intro {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.hero-content h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 12px 0 18px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 36px;
+
+  background: linear-gradient(145deg, #ffffff, #dcdcdc);
+  color: #000000;
+
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+
+  box-shadow:
+    0 14px 32px rgba(0,0,0,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+/* RIGHT PHOTO - 3D CARD */
+.hero-photo img {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+
+  background: linear-gradient(145deg, #1a1a1d, #0c0c0e);
+  padding: 6px;
+
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.8),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
